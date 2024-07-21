@@ -1,6 +1,6 @@
-from flask import Flask, render_template, request #type:ignore
+from flask import Flask, render_template, request
 import pickle
-import numpy as np #type:ignore
+import numpy as np
 
 model = pickle.load(open("model.pkl","rb"))
 app = Flask(__name__)
